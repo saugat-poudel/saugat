@@ -133,7 +133,7 @@
                         </div>
                         <div class="col-12">
                             <ul class="actions">
-                                <li><input type="submit" value="Send Message" /></li>
+                                <li><input type="submit" value="Send Message" class="primary" /></li>
                                 <li><input type="reset" value="Clear Form" class="alt" /></li>
                             </ul>
                         </div>
@@ -167,10 +167,9 @@
                 // Basic client-side validation (optional)
                 const name = document.getElementById('name').value;
                 const email = document.getElementById('email').value;
-                 const subject = document.getElementById('subject').value;
                 const message = document.getElementById('message').value;
 
-                if (!name || !email || || !subject ||    !message) {
+                if (!name || !email || !message) {
                     alert('Please fill in all required fields.');
                     return false;
                 }
