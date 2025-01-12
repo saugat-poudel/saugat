@@ -117,7 +117,7 @@
                     <h2>Contact Me</h2>
                     <p>Feel free to reach out to me for inquiries or collaboration opportunities.</p>
                 </header>
-                <form method="post" action="process_contact_form.php">
+                <form method="post" action="process_contact_form.php" onsubmit="return validateForm();">
                     <div class="row">
                         <div class="col-6 col-12-small">
                             <input type="text" name="name" id="name" placeholder="Your Name" required />
@@ -140,7 +140,7 @@
                     </div>
                 </form>
                 <hr />
-                <h3>Find me on:</h3>
+                <h3 style="color:#555;">Find me on:</h3>
                 <ul class="social">
                     <li><a href="https://www.facebook.com/poudelsaugat10" class="icon brands fa-facebook"><span class="label">Facebook</span></a></li>
                     <li><a href="https://www.instagram.com/saugat_poudel10" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
@@ -162,6 +162,20 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
+        <script>
+            function validateForm() {
+                // Basic client-side validation (optional)
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+
+                if (!name || !email || !message) {
+                    alert('Please fill in all required fields.');
+                    return false;
+                }
+                return true;
+            }
+        </script>
 
     </body>
 </html>
