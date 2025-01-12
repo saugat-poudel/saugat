@@ -1,198 +1,339 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Saugat Poudel</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <link rel="icon" href="images/favicon.png" type="image/png">
-        <style>
-            body {
-                background-color: #f0f0f0; /* Light background color */
-            }
-            #contact {
-                background-color: #ffffff; /* White background for the contact section */
-                color: #333; /* Darker text for readability */
-            }
-            #contact h2 {
-                color: #444; /* Slightly lighter heading */
-            }
-            #contact .button {
-                background-color: #007bff; /* Blue background for Send button */
-                color: #fff; /* White text */
-            }
-        </style>
-    </head>
-    <body class="is-preload">
 
-        <!-- Navigation -->
-        <nav id="nav">
-            <ul class="container">
-                <li><a href="#top">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+<head>
+    <meta charset="utf-8">
+    <title>Saugat Poudel</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
 
-        <!-- Home Section -->
-        <article id="top" class="wrapper style1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-4 col-5-large col-12-medium">
-                        <span class="image fit"><img src="images/pic00.png" alt="Saugat Poudel" /></span>
-                    </div>
-                    <div class="col-8 col-7-large col-12-medium">
-                        <header>
-                            <h1>Hi, I'm <strong>Saugat Poudel</strong></h1>
-                            <p class="hero-subheading">A passionate Civil Engineering student and aspiring developer.</p>
-                        </header>
-                        <p>Welcome to my personal website, where you can explore my work, projects, and get in touch with me.</p>
-                        <a href="#about" class="button large scrolly">Learn more about me</a>
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 display-5"><span class="text-primary">Saugat</span>Poudel</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#qualification" class="nav-item nav-link">Quality</a>
+                <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
                     </div>
                 </div>
             </div>
-        </article>
+        </div>
+    </div>
+    <!-- Video Modal End -->
 
-        <!-- About Me Section -->
-        <article id="about" class="wrapper style2">
-            <div class="container">
-                <header>
-                    <h2>About Me</h2>
-                    <p>I'm a Civil Engineering student with a deep interest in technology and web development. I love solving real-world problems with innovative solutions.</p>
-                </header>
-                <div class="row aln-center">
-                    <div class="col-4 col-6-medium col-12-small">
-                        <section class="box style1">
-                            <span class="image fit"><img src="images/pic01.jpg" alt="Academic Background" /></span>
-                            <h3>Academic Background</h3>
-                            <p>Currently pursuing my degree in Civil Engineering at Paschimanchal Campus.</p>
-                        </section>
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                        <section class="box style1">
-                            <span class="icon solid fa-cogs"></span>
-                            <h3>Skills & Expertise</h3>
-                            <p>Skills in web development, project management, and structural design. Proficient in HTML, CSS, JavaScript, and CAD tools.</p>
-                        </section>
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                        <section class="box style1">
-                            <span class="icon solid fa-code"></span>
-                            <h3>Web Development</h3>
-                            <p>Building functional websites and apps using modern web technologies to create interactive and user-friendly experiences.</p>
-                        </section>
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/profile.png" alt="">
+                </div>
+                <div class="col-lg-7 text-center text-lg-left">
+                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Saugat Poudel</h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <div class="typed-text d-none">Aspiring Civil Engineer, Innovator, Problem-Solver</div>
                     </div>
                 </div>
-                <footer>
-                    <a href="#portfolio" class="button large scrolly">Check out my portfolio</a>
-                </footer>
             </div>
-        </article>
+        </div>
+    </div>
+    <!-- Header End -->
 
-        <!-- Portfolio Section -->
-        <article id="portfolio" class="wrapper style3">
-            <div class="container">
-                <header>
-                    <h2>My Recent Projects</h2>
-                    <p>These are some of the projects I've worked on recently, showcasing my skills and expertise.</p>
-                </header>
-                <div class="row">
-                    <div class="col-4 col-6-medium col-12-small">
-                        <article class="box style2">
-                            <a href="#" class="image featured"><img src="images/pic00.jpg" alt="Responsive Website" /></a>
-                            <h3><a href="#">Responsive Website</a></h3>
-                            <p>A fully responsive website I built using HTML, CSS, and JavaScript. Check it out for a better user experience.</p>
-                        </article>
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
+                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="img/about.png" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <p>A passionate Civil Engineering student with a strong foundation in structural design, construction management, and sustainable engineering practices. Dedicated to solving real-world infrastructure challenges through innovative and environmentally conscious solutions. Proficient in leveraging modern tools and technologies to deliver impactful results.</p>
                     </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                        <article class="box style2">
-                            <a href="#" class="image featured"><img src="images/pic02.jpg" alt="Web Application" /></a>
-                            <h3><a href="#">Web Application</a></h3>
-                            <p>A web app designed to help manage engineering projects, using the latest technologies for maximum efficiency.</p>
-                        </article>
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                        <article class="box style2">
-                            <a href="#" class="image featured"><img src="images/pic03.jpg" alt="CAD Design" /></a>
-                            <h3><a href="#">CAD Design</a></h3>
-                            <p>A structural design project completed using AutoCAD. Designed to demonstrate my skills in technical drawing and structural analysis.</p>
-                        </article>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Qualification Start -->
+    <div class="container-fluid py-5" id="qualification">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">My Education</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">BE Civil</h5>
+                            <p class="mb-2"><strong>IOE,Paschimanchal Campus</strong> | <small>2023 - Present</small></p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">NEB +2</h5>
+                            <p class="mb-2"><strong>Pokhara Secondary School</strong> | <small>2020 - 2022</small></p>
+                            <p>Secured 3.57 Gpa</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Secondary Education Examination</h5>
+                            <p class="mb-2"><strong>Shree Sarbodaya Higher Secondary School</strong> | <small>2007 - 2019</small></p>
+                            <p>Secured 3.55 Gpa</p>
+                        </div>
                     </div>
                 </div>
-                <footer>
-                    <a href="#contact" class="button large scrolly">Let's get in touch!</a>
-                </footer>
-            </div>
-        </article>
-
-        <!-- Contact Section -->
-        <article id="contact" class="wrapper style4">
-            <div class="container medium">
-                <header>
-                    <h2>Contact Me</h2>
-                    <p>Feel free to reach out to me for inquiries or collaboration opportunities.</p>
-                </header>
-                <form method="post" action="process_contact_form.php" onsubmit="return validateForm();">
-                    <div class="row">
-                        <div class="col-6 col-12-small">
-                            <input type="text" name="name" id="name" placeholder="Your Name" required />
+                <div class="col-lg-6">
+                    <h3 class="mb-4">My Expericence</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Intern</h5>
+                            <p class="mb-2"><strong>Soft Company</strong> | <small>2027 - 2028</small></p>
+                            <p>Gained hands-on experience in foundation design and structural analysis.</p>
                         </div>
-                        <div class="col-6 col-12-small">
-                            <input type="email" name="email" id="email" placeholder="Your Email" required />
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Project Volunteer</h5>
+                            <p class="mb-2"><strong>Soft Company</strong> | <small>2028 - 2029</small></p>
+                            <p>Collaborated with a team to prepare cost estimations and project documentation.</p>
                         </div>
-                        <div class="col-12">
-                            <input type="text" name="subject" id="subject" placeholder="Subject" />
-                        </div>
-                        <div class="col-12">
-                            <textarea name="message" id="message" placeholder="Your Message" required></textarea>
-                        </div>
-                        <div class="col-12">
-                            <ul class="actions">
-                                <li><input type="submit" value="Send Message" /></li>
-                                <li><input type="reset" value="Clear Form" class="alt" /></li>
-                            </ul>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Assistant</h5>
+                            <p class="mb-2"><strong>Soft Company</strong> | <small>2029 - 2030</small></p>
+                            <p>Provided support in drafting technical drawings using AutoCAD and Revit.</p>
                         </div>
                     </div>
-                </form>
-                <hr />
-                <h3 style="color:#555;">Find me on:</h3>
-                <ul class="social">
-                    <li><a href="https://www.facebook.com/poudelsaugat10" class="icon brands fa-facebook"><span class="label">Facebook</span></a></li>
-                    <li><a href="https://www.instagram.com/saugat_poudel10" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                </ul>
+                </div>
             </div>
-        </article>
+        </div>
+    </div>
+    <!-- Qualification End -->
 
-        <!-- Footer -->
-        <footer>
-            <ul id="copyright">
-                <li>&copy; Saugat Poudel 2025. All rights reserved.</li>
-            </ul>
-        </footer>
 
-        <!-- Scripts -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.scrolly.min.js"></script>
-        <script src="assets/js/browser.min.js"></script>
-        <script src="assets/js/breakpoints.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
-        <script>
-            function validateForm() {
-                // Basic client-side validation (optional)
-                const name = document.getElementById('name').value;
-                const email = document.getElementById('email').value;
-                const subject = document.getElementById('subject').value;
-                const message = document.getElementById('message').value;
+    <!-- Portfolio Start -->
+    <div class="container-fluid pt-5 pb-3" id="portfolio">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Gallery</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Portfolio</h1>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mb-2">
+                    <ul class="list-inline mb-4" id="portfolio-flters">
+                        <li class="btn btn-sm btn-outline-primary m-1 active"  data-filter="*">All</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Design</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Development</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Marketing</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-1.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-2.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-3.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-4.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-4.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-5.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-5.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-6.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-6.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio End -->
 
-                if (!name || !email ||  || !subject || !message) {
-                    alert('Please fill in all required fields.');
-                    return false;
-                }
-                return true;
-            }
-        </script>
 
-    </body>
+    <!-- Contact Start -->
+    <div class="container-fluid py-5" id="contact">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form text-center">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="form-row">
+                                <div class="control-group col-sm-6">
+                                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
+                                        required="required" data-validation-required-message="Please enter your name" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-sm-6">
+                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
+                                        required="required" data-validation-required-message="Please enter your email" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
+                                    required="required" data-validation-required-message="Please enter a subject" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
+                                    required="required"
+                                    data-validation-required-message="Please enter your message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Send
+                                    Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-light btn-social mr-2" href="https://www.facebook.com/poudelsaugat10"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://www.instagram.com/saugat_poudel10"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://wa.me/+977-9867666511"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Saugat Poudel 2025</a>. All Rights Reserved.</a>
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
 </html>
