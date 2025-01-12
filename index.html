@@ -6,6 +6,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/main.css" />
         <link rel="icon" href="images/favicon.png" type="image/png">
+        <style>
+            body {
+                background-color: #f0f0f0; /* Light background color */
+            }
+            #contact {
+                background-color: #ffffff; /* White background for the contact section */
+                color: #333; /* Darker text for readability */
+            }
+            #contact h2 {
+                color: #444; /* Slightly lighter heading */
+            }
+            #contact .button {
+                background-color: #007bff; /* Blue background for Send button */
+                color: #fff; /* White text */
+            }
+        </style>
     </head>
     <body class="is-preload">
 
@@ -114,8 +130,8 @@
         <article id="contact" class="wrapper style4">
             <div class="container medium">
                 <header>
-                    <h2 style="color: #e0e0e0;">Contact Me</h2>
-                    <p style="color: #d0d0d0;">Feel free to reach out to me for inquiries or collaboration opportunities.</p>
+                    <h2>Contact Me</h2>
+                    <p>Feel free to reach out to me for inquiries or collaboration opportunities.</p>
                 </header>
                 <form method="post" action="process_contact_form.php" onsubmit="return validateForm();">
                     <div class="row">
@@ -133,7 +149,7 @@
                         </div>
                         <div class="col-12">
                             <ul class="actions">
-                                <li><input type="submit" value="Send Message" style="background-color: #007bff; color: white;" /></li>
+                                <li><input type="submit" value="Send Message" /></li>
                                 <li><input type="reset" value="Clear Form" class="alt" /></li>
                             </ul>
                         </div>
